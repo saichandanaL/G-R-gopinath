@@ -1,0 +1,344 @@
+
+*
+{
+	background-image: url('https://st.depositphotos.com/1288351/3831/i/450/depositphotos_38316721-stock-photo-road-to-heaven.jpg');
+	background-size:1550px 750px;
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Dancing Script', cursive;
+}
+.air{
+	left: 100%;
+	animation: fly 10s infinite;
+	/* width: 10%; */
+	position: absolute;
+	overflow: hidden;
+}
+@keyframes fly{
+	0%{
+		left:  100%;
+	}
+	25%{
+
+	}
+	50%{
+
+	}
+	75%{
+
+	}
+	100%{
+		left: -100%;
+	}
+}
+.container
+{
+	position: relative;
+	width:100%;
+	/* min-height:100vh; */
+	display : flex;
+	justify-content: center;
+	align-items : center;
+	background : transparent;
+	transition : 0.5s;
+	padding: 20px;
+}
+.container#blur.active
+{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+.container .content
+{
+	position: relative;
+	max-width: 800px;
+
+}
+
+h2
+{
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #333;
+}
+.container .content img
+{
+	max-width: 100%;
+	display: block;
+}
+
+a{
+	position: relative;
+	padding: 5px 20px;
+	/* display: inline-block; */
+	margin-top: 20px;
+	text-decoration: none;
+	color: #fff;
+	background: #111;
+}
+
+#popup5
+{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://soldier2ndlife-forum-production.s3.amazonaws.com/187ea2c79c3c992fb53f078338dcb90130c21a8d631.png');
+	background-repeat: no-repeat;
+	background-size:600px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popup5.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+#popup4
+{
+
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 855px;
+
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://www.outlookindia.com/public/uploads/gallery/20111117/gr_gopinath_20111128.jpg');
+	background-repeat: no-repeat;
+	background-size:855px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popup4.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popup3  
+{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: black;
+	background-image: url('https://www.outlookindia.com/public/uploads/gallery/20161201/gopinath_20161212_600_855.jpg');
+	background-repeat: no-repeat;
+	background-size:600px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popup3.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popup2 
+{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://www.outlookindia.com/public/uploads/gallery/20170919/Capt-Gopinath_20171002_600_855.jpg');	background-repeat: no-repeat;
+	background-size:800px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popup2.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popup1 
+{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://www.outlookindia.com/public/uploads/gallery/20160318/gopinath_20160328_600_855.jpg');
+
+	background-repeat: no-repeat;
+	background-size:600px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popup1.active
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popleft5 
+{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	width: 370px;
+	height: 360px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://suneeshas.files.wordpress.com/2012/11/captain_gopinath_b_20061016.jpg');
+	background-repeat: no-repeat;
+	background-size: 370px 360px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+
+
+}
+#popleft5.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popleft4 
+{
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	height: 340px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://th.bing.com/th/id/OIP.tpybE-ejfjrZbaQpoeXCVQAAAA?pid=Api&rs=1');
+	background-repeat: no-repeat;
+	background-size: 450px 340px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popleft4.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popleft3 
+{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 400px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://th.bing.com/th/id/OIP.JDfCFuEDsmGjWucalhZC4QAAAA?pid=Api&rs=1');
+	background-repeat: no-repeat;
+	background-size: 300px 400px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popleft3.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popleft2 
+{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	height: 450px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://www.hdfclife.com/when-i-grow-up/img/nevertoo/aviation-icon.jpg');
+	background-repeat: no-repeat;
+	background-size: 450px 450px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popleft2.active 
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popleft1
+{
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 250px;
+
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30);
+	background: transparent;
+	background-image: url('https://www.spectralhues.com/wp-content/uploads/2014/01/Captain-Gopinath.jpg');
+	background-repeat: no-repeat;
+	background-size: 300px 250px;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 22px;
+}
+#popleft1.active
+{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
